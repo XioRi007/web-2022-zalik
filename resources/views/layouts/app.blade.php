@@ -42,39 +42,7 @@
                 <i class="icon-bell"></i>
                 <span class="badge badge-pill badge-danger">5</span>
             </a>
-        </li>
-        <li class="nav-item dropdown">
-            <a class="nav-link" style="margin-right: 10px" data-toggle="dropdown" href="#" role="button"
-               aria-haspopup="true" aria-expanded="false">
-                {{ Auth::user()->name }}
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-                <div class="dropdown-header text-center">
-                    <strong>Account</strong>
-                </div>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-envelope-o"></i> Messages
-                    <span class="badge badge-success">42</span>
-                </a>
-                <div class="dropdown-header text-center">
-                    <strong>Settings</strong>
-                </div>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-user"></i> Profile</a>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-wrench"></i> Settings</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">
-                    <i class="fa fa-shield"></i> Lock Account</a>
-                <a href="{{ url('/logout') }}" class="dropdown-item btn btn-default btn-flat"
-                   onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                    <i class="fa fa-lock"></i>Logout
-                </a>
-                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-            </div>
-        </li>
+        </li>        
     </ul>
 </header>
 
